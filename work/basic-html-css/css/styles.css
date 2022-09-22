@@ -1,0 +1,16 @@
+header {
+  background-color: aquamarine;
+  display: flex;
+}
+
+footer {
+  background-color: rgb(125, 206, 45);
+}
+
+main {
+  background-color: rgb(218, 109, 109);
+}
+
+a {
+  text-decoration: none;
+}
