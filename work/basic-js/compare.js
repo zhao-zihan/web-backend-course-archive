@@ -1,10 +1,18 @@
 "use strict";
-/* DO NOT MODIFY EXCEPT WHERE ALLOWED */
-module.exports = compare; // DO NOT MODIFY - USED FOR TESTING
+module.exports = compare;
 
-function compare( word, guess ) {  // DO NOT MODIFY
+function compare(word, guess) {
+  word = word.toLowerCase();
+  guess = guess.toLowerCase();
 
-/* YOU MAY MODIFY THE LINES BELOW */
+  let count = 0;
 
-  return 0; // this line is wrong
+  for (let char of word) {
+    if (guess.includes(char)) {
+      count++;
+      guess = guess.replace(char, "#");
+    }
+  }
+
+  return count;
 }
