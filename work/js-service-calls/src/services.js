@@ -19,7 +19,7 @@ const appEl = document.querySelector(".app");
 export function fetchLogin(username) {
   return (
     fetch("/api/session/", {
-      method: "POST",
+      method: "PUT",
       headers: {
         "content-type": "application/json", // set this header when sending JSON in the body of request
       },
@@ -60,9 +60,9 @@ function fetchLogout() {
   }).catch((err) => Promise.reject({ error: "network-error" }));
 }
 
-function fetchPutWord(word) {
+function fetchPostWord(word) {
   return fetch("/api/word/", {
-    method: "PUT",
+    method: "POST",
     headers: {
       "content-type": "application/json",
     },
@@ -152,7 +152,7 @@ appEl.addEventListener("submit", (event) => {
     const wordInputEl = document.querySelector(".form__word-input");
     const newWord = wordInputEl.value;
 
-    fetchPutWord(newWord)
+    fetchPostWord(newWord)
       .then((response) => {
         const { username, storedWord } = response;
         state.username = username;

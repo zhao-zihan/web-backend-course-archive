@@ -164,7 +164,7 @@ var _require = __webpack_require__(/*! ./state */ "./src/state.js"),
 var appEl = document.querySelector(".app");
 function fetchLogin(username) {
   return fetch("/api/session/", {
-    method: "POST",
+    method: "PUT",
     headers: {
       "content-type": "application/json" // set this header when sending JSON in the body of request
     },
@@ -218,9 +218,9 @@ function fetchLogout() {
     });
   });
 }
-function fetchPutWord(word) {
+function fetchPostWord(word) {
   return fetch("/api/word/", {
-    method: "PUT",
+    method: "POST",
     headers: {
       "content-type": "application/json"
     },
@@ -309,7 +309,7 @@ appEl.addEventListener("submit", function (event) {
     event.preventDefault();
     var wordInputEl = document.querySelector(".form__word-input");
     var newWord = wordInputEl.value;
-    fetchPutWord(newWord).then(function (response) {
+    fetchPostWord(newWord).then(function (response) {
       var username = response.username,
         storedWord = response.storedWord;
       state.username = username;
