@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  background-color: rgb(140, 140, 243);
+}
+
+.app {
+  padding: 3rem;
+  background-color: bisque;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  position: relative;
+  min-width: fit-content;
+}
+
+.form__login-input {
+  padding: 0.4rem;
+}
+
+.form__login-button {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(34, 172, 34);
+  color: white;
+  cursor: pointer;
+}
+
+.form__login-error {
+  color: red;
+  margin-top: 0.5rem;
+}
+
+.form__logout-button {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(236, 61, 61);
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+}
+
+.word__username {
+  margin-bottom: 1rem;
+}
+
+.stored-word-container {
+  margin-bottom: 1rem;
+}
+
+.form__word-input {
+  padding: 0.4rem;
+}
+
+.form__word-button {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(34, 172, 34);
+  color: white;
+  cursor: pointer;
+  top: 3rem;
+  right: 3rem;
+}
+
+.form__word-error {
+  color: red;
+  margin-top: 0.5rem;
+}

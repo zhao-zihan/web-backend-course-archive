@@ -1,4 +1,4 @@
-const uuid = require('uuid').v4;
+const uuid = require("uuid").v4;
 
 const sessions = {};
 
@@ -21,6 +21,7 @@ function deleteSession(sid) {
 }
 
 module.exports = {
+  sessions,
   addSession,
   deleteSession,
   getSessionUser,
