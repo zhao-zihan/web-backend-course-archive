@@ -51,3 +51,7 @@ This area will provide useful information to the users. It will display the last
 ## Guess Word Form
 
 At the very bottom is a form to submit new guesses. You can type in any word you like, the system won't stop you, but it will display corresponding error messages if the guess is incorrect or impossible.
+
+---
+
+For grading purpose, there will be a console.log message showing the secret word printed to the browser console each time a new game is loaded.
