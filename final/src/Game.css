@@ -1,0 +1,8 @@
+.game {
+  min-width: fit-content;
+}
+
+.game__lists {
+  display: flex;
+  gap: 1rem;
+}

@@ -1,0 +1,17 @@
+.guess__form {
+  display: flex;
+  gap: 1rem;
+}
+
+.guess__form-input {
+  padding: 0.5rem;
+}
+
+.guess__form-button {
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.25);
+  background-color: #c6ddf0;
+}
