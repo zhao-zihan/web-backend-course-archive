@@ -1,0 +1,11 @@
+.game__messages {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #c99da3;
+  padding: 2rem;
+}
+
+.game__message {
+  display: block;
+}

@@ -1,0 +1,26 @@
+.word-list__container {
+  background-color: #c8bdca;
+  padding: 2rem;
+}
+
+.words-list__label {
+  display: block;
+  margin-bottom: 2rem;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.words-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 30rem;
+  min-width: fit-content;
+  list-style: none;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+  justify-content: center;
+  align-items: center;
+}
